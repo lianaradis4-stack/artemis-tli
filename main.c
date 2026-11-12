@@ -7,25 +7,6 @@
 #include "interfaz.h"
 #include "validaciones.h"
 
-/* Ejecuta una simulación completa y registra el intento en el historial */
-static void jugarIntento(Intento *historial, int *n, const ParamTLI *p)
-{
-    ResTLI r;
-    SimTLI s;
-    Intento *in = &historial[*n];
-
-    tli_calcular(p, &r);
-    tli_simular(p, &r, &s);
-    in->nro = *n + 1;
-    tli_evaluar(p, &r, &s, in);
-    (*n)++;
-
-    mostrarAnalisis(p, &r);
-    pausar();
-    mostrarSimulacion(p, &r, &s);
-    mostrarEvaluacion(in);
-    pausar();
-}
 
 int main(int argc, char *argv[])
 {
