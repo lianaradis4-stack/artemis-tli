@@ -13,6 +13,10 @@ void mostrarAnalisis(const ParamTLI *p, const ResTLI *r);
 void mostrarSimulacion(const ParamTLI *p, const ResTLI *r, const SimTLI *s);
 void mostrarEvaluacion(const Intento *in);
 
+/* Ejecuta una simulación completa (cálculo, simulación, evaluación y
+ * pantallas) y registra el intento en historial[*n], incrementando *n. */
+void jugarIntento(Intento *historial, int *n, const ParamTLI *p);
+
 /* Reporte final: escribe en 'out' (stdout o un archivo) */
 void imprimirReporte(FILE *out, const Intento *historial, int n);
 int  guardarReporte(const char *archivo, const Intento *historial, int n);

@@ -157,6 +157,25 @@ void mostrarEvaluacion(const Intento *in)
            in->cumplidos == 3 ? "MISIÓN CUMPLIDA" : "MISIÓN NO CUMPLIDA");
 }
 
+void jugarIntento(Intento *historial, int *n, const ParamTLI *p)
+{
+    ResTLI r;
+    SimTLI s;
+    Intento *in = &historial[*n];
+
+    tli_calcular(p, &r);          /* incisos b, c, d (cálculo analítico) */
+    tli_simular(p, &r, &s);       /* inciso a (vuelo libre por pasos)    */
+    in->nro = *n + 1;
+    tli_evaluar(p, &r, &s, in);   /* puntaje y criterios                 */
+    (*n)++;
+
+    mostrarAnalisis(p, &r);
+    pausar();
+    mostrarSimulacion(p, &r, &s);
+    mostrarEvaluacion(in);
+    pausar();
+}
+
 void imprimirReporte(FILE *out, const Intento *h, int n)
 {
     fprintf(out, "\n==================== REPORTE FINAL - TLI ====================\n");

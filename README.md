@@ -6,7 +6,8 @@ UTN FRRe · Algoritmos y Estructuras de Datos · Trabajo Final Integrador (Lengu
 
 | Apellido y nombre | Legajo | Usuario GitHub |
 |-------------------|--------|----------------|
-| _completar_       |        |                |
+| Pablo Ignacio Gutierrez |   |                |
+| Radis Liana Guadalupe |      |                |
 | _completar_       |        |                |
 | _completar_       |        |                |
 
@@ -39,11 +40,17 @@ Se guardan hasta 10 intentos para el reporte final (opción 4, exportable a `rep
 
 ## c) Funcionamiento
 
+```mermaid
+flowchart LR
+    main["main.c<br/>menú y ciclo de intentos"] --> interfaz["interfaz.c / .h<br/>pantallas, análisis, reporte"]
+    main --> artemis["artemis.c / .h<br/>física, simulación, evaluación"]
+    main --> valid["validaciones.c / .h<br/>ingreso seguro de datos"]
+    interfaz --> artemis
+    interfaz --> valid
 ```
-main.c ──► interfaz.c ──► artemis.c   (física y simulación)
-   │            └───────► validaciones.c
-   └───────────────────► validaciones.c
-```
+
+Flujo de un intento: `pedirParametros` → `tli_calcular` (incisos b, c, d) → `tli_simular` (inciso a) →
+`tli_evaluar` → `mostrarAnalisis` / `mostrarSimulacion` / `mostrarEvaluacion` → se guarda en `historial[]`.
 
 | Módulo | Responsabilidad |
 |--------|-----------------|
@@ -69,11 +76,12 @@ Requiere `gcc` y `make` (Linux/macOS, o MinGW/WSL en Windows). En consolas de Wi
 
 ## e) Registro de uso de Inteligencia Artificial
 
-> **Completar con lo realmente hecho por el equipo** (obligatorio según el enunciado).
-
 | Herramienta | Tarea | Prompt / consulta realizada | Cómo se validó / adaptó |
 |-------------|-------|-----------------------------|--------------------------|
-| Claude | Generación de la estructura base del proyecto | _pegar el prompt_ | Revisión línea por línea, compilación sin warnings, `make test`, pruebas con entradas inválidas |
-| _completar_ | | | |
+| Claude (Sonnet 5.5) | Generación del código base modular de la Situación 3 (`main.c`, `artemis.*`, `interfaz.*`, `validaciones.*`, `Makefile`) | Se adjuntó el PDF del enunciado y se escribió: *"Lee el documento adjunto con atención y actúa como un experto programador en lenguaje C. Genera un programa en C completo, modular, optimizado y limpio (estándar C99/C11) que cumpla rigurosamente con todas las especificaciones, requisitos, entradas, salidas y restricciones descritas en el archivo. Por favor incluye: 1. El código fuente completo y listo para compilar. 2. Comentarios explicativos en la lógica principal y funciones clave. 3. Manejo adecuado de errores y liberación de memoria si aplica. 4. Una función main() de prueba para verificar su funcionamiento."* | Compilación con `-Wall -Wextra -pedantic` sin warnings; `make test` (7 pruebas OK); sesiones de prueba con entradas inválidas (letras, vacío, fuera de rango, coma decimal, EOF). |
+| Claude (Sonnet 5.5) | Acotar el proyecto a un solo escenario | *"haz la situacion 3"* | Se verificó que el código cubre los incisos a–d de la Situación 3. |
+| Claude (Sonnet 5.5) | Completar el README (integrantes, tabla de IA, diagrama) | Pedidos puntuales para cargar los nombres de los integrantes y *"completa vos lo que puedas"* | Revisión manual del README. |
+
+> **Pendiente del equipo:** agregar acá cualquier otra consulta que hagan a una IA (dudas de punteros, errores del compilador, etc.), y describir qué revisaron, probaron o modificaron ustedes en el código. Esta tabla debe reflejar solo lo que realmente ocurrió.
 
 Todos los integrantes deben poder explicar cada línea del código en el coloquio.
