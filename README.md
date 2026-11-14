@@ -81,6 +81,3 @@ Requiere `gcc` y `make` (Linux/macOS, o MinGW/WSL en Windows). En consolas de Wi
 | Claude (Sonnet 5.5) | Planificación de estructuras para el escenario elegido (Situación 3)|De los distintos escenarios del enunciado, decidimos desarrollar la Situación 3. ¿Qué estructuras de datos y validaciones críticas me sugerís tener en cuenta para encarar los incisos a–d?| Se analizaron las sugerencias para definir el diseño previo del programa antes de empezar a codificar los incisos a–d.|
 | Claude (Sonnet 5.5) | Formateo y revisión de redacción del README | Pasamos el borrador del README con los datos del equipo y la estructura general. Necesitamos darle formato en Markdown, redactar las instrucciones de compilación y estructurar la sección de la tabla |Revisión manual del formato Markdown, verificación de los comandos de compilación y ajuste de los nombres de los integrantes.|
 
-> **Pendiente del equipo:** agregar acá cualquier otra consulta que hagan a una IA (dudas de punteros, errores del compilador, etc.), y describir qué revisaron, probaron o modificaron ustedes en el código. Esta tabla debe reflejar solo lo que realmente ocurrió.
-
-Todos los integrantes deben poder explicar cada línea del código en el coloquio.
