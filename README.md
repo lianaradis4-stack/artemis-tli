@@ -6,9 +6,9 @@ UTN FRRe · Algoritmos y Estructuras de Datos · Trabajo Final Integrador (Lengu
 
 | Apellido y nombre | Legajo | Usuario GitHub |
 |-------------------|--------|----------------|
-| Pablo Ignacio Gutierrez |   |                |
-| Radis Liana Guadalupe |      |                |
-| _completar_       |        |                |
+| Pablo Ignacio Gutierrez | 28135  |pabloignaciogutierrez28-sys|
+| Radis Liana Guadalupe | 28366  |lianaradis4-strack|
+| Chamborr Maximo| 27953 |                |
 | _completar_       |        |                |
 
 Comisión: _completar_
