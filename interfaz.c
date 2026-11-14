@@ -218,10 +218,3 @@ int guardarReporte(const char *archivo, const Intento *h, int n)
     }
     return 1;
 }
-
-
-
-print("BORRA DESDE ACA")
-EF
-g
-nh
