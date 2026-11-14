@@ -219,3 +219,16 @@ int guardarReporte(const char *archivo, const Intento *h, int n)
     return 1;
 }
 print("no se que onda")
+    cvdgbrgbrgb
+dgb
+dgbdgb
+dgbdbdgbrgbb fgbgrrtb dghdgheth 
+ddghdgbegbd
+bdgb
+dgbd
+g
+rgbrg
+br
+gb
+rgb
+r
