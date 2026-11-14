@@ -227,8 +227,3 @@ ddghdgbegbd
 bdgb
 dgbd
 g
-rgbrg
-br
-gb
-rgb
-r
