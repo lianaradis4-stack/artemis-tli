@@ -8,7 +8,7 @@ UTN FRRe · Algoritmos y Estructuras de Datos · Trabajo Final Integrador (Lengu
 |-------------------|--------|----------------|
 | Pablo Ignacio Gutierrez | 28135  |pabloignaciogutierrez28-sys|
 | Radis Liana Guadalupe | 28366  |lianaradis4-strack|
-| Chamborr Maximo| 27953 |                |
+| Chambor Maximo| 27953 |Chamborr               |
 | _completar_       |        |                |
 
 Comisión: _completar_
