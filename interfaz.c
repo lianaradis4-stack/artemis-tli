@@ -218,7 +218,11 @@ int guardarReporte(const char *archivo, const Intento *h, int n)
     }
     return 1;
 }
-print("no se que onda")
+
+
+
+print("BORRA DESDE ACA")
+
     cvdgbrgbrgb
 dgb
 dgbdgb
@@ -227,3 +231,34 @@ ddghdgbegbd
 bdgb
 dgbd
 g
+jxjsjsjsjs
+UHBIGGIIIHBYBU
+bdgbg
+gff
+UHBBUYBUYBUYBUY
+
+r
+hn
+gf
+bd
+r
+y
+
+nf
+nhth.   jmhgj
+    th
+m
+nn
+tynytn
+
+thjfyr
+n
+t
+nfgn
+y
+muy 
+IJEFNIVJF
+BFEBE
+EF
+g
+nh
